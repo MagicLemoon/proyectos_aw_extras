@@ -1,0 +1,27 @@
+.article {
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.vertical .article {
+    background-color: #10375c;
+    color: #f3c623;
+    width: 100px;
+}
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.horizontal .article {
+    background-color: #f3c623;
+    color: #10375c;
+    width: 100px;
+}
+#formulario {
+    display: none;
+    margin-top: 20px;
+}
+section {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de HTML, CSS y JavaScript</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <section>
+        <h2>Ejercicio I.1: Cajas Articles</h2>
+        <div>
+            <label for="numCajas">¿Cuántas cajas deseas colocar?</label>
+            <input type="number" id="numCajas" min="1">
+            <button onclick="crearCajas()">Crear Cajas</button>
+        </div>
+        <div id="contenedorCajas"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio I.2: Formulario de Votación</h2>
+        <form id="votacionForm">
+            <label for="seccion">Selecciona tu sección:</label>
+            <select id="seccion">
+                <option value="norte">Norte</option>
+                <option value="sur">Sur</option>
+                <option value="centro">Centro</option>
+            </select>
+            <button type="button" onclick="emitirVoto()">Votar</button>
+        </form>
+        <div id="resultadoVoto"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio I.3: Suma de Números Positivos</h2>
+        <button onclick="sumarNumeros()">Iniciar</button>
+        <div id="resultadoSuma"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio II.1: Mostrar Números de Mayor a Menor</h2>
+        <button onclick="ordenarNumeros()">Ordenar Números</button>
+        <div id="resultadoOrden"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio II.2: Calcular Importe Neto</h2>
+        <button onclick="calcularImporte()">Calcular Importe Neto</button>
+        <div id="resultadoImporte"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio II.3: Calcular Sueldo</h2>
+        <button onclick="calcularSueldo()">Calcular Sueldo</button>
+        <div id="resultadoSueldo"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio III.1: Suma de Números Impares</h2>
+        <button onclick="sumarImpares()">Calcular Suma</button>
+        <div id="resultadoImpares"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio III.2: Mostrar Asteriscos</h2>
+        <button onclick="mostrarAsteriscos()">Mostrar Asteriscos</button>
+        <div id="resultadoAsteriscos"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio III.3: Tablas de Multiplicar</h2>
+        <button onclick="mostrarTablas()">Mostrar Tablas</button>
+        <pre id="resultadoTablas"></pre>
+    </section>
+
+    <section>
+        <h2>Ejercicio IV: Mostrar/Ocultar Formulario</h2>
+        <button onclick="toggleFormulario()">Mostrar/Ocultar Formulario</button>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+  <script src="java.js"></script>
+</body>
+</html>
